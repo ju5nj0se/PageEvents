@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicar Sesion</title>
+    <link rel="stylesheet" href="styles/output.css">
 </head>
-<body>
-    <header>
-        .
-    </header>
+
+<body class="flex justify-center h-screen items-center">
+    <main class="m-3 p-4 text-center border-2 rounded-3xl">
+        <h3 class="text-xl font-bold">Inicio de Sesion</h3>
+        <form id="form" class="flex flex-col items-center ">
+            <div>
+                <input type="text" class="border border-gray-600 focus:ring-1 rounded-md p-1 m-2 bg-gray-100" placeholder=" Usuario" id="user" required>
+            </div>
+            <div>
+                <input type="password" class="border border-gray-600 rounded-md p-1 m-2 bg-gray-100" 
+                placeholder="Contraseña" id="pass" required>
+            </div>
+
+            <button class="bg-green-600 w-30 ml-2 pt-0.5 pb-1.5 text-white rounded-md hover:scale-105 transition-transform" id="login">Login</button>
+        </form>
+    </main>
+    <p class=""></p>
 </body>
-<script src="main.js"></script>
+<script src="js/login.js"></script>
 </html>
